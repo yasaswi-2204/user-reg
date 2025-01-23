@@ -7,167 +7,140 @@
     <title>Community Volunteering - Update Profile</title>
     <style>
         body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-}
-a {
-    text-decoration: none; 
-    color: black; 
-}
-.container {
-    width: 80%;
-    margin: auto;
-}
-header {
-    background: #35424a;
-    color: #ffffff;
-    padding: 10px 0;
-}
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
 
-header .logo h1 {
-    margin: 0;
-    padding: 0;
-}
+        header {
+            background-color: #6b8cb3;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
+        header .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+            font-size: 1em;
+        }
 
-nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-}
-nav ul li a:hover {
-    text-decoration: underline;
-    transition: transform 0.3s ease, font-weight 0.3 ease;
-    font-weight: bold;
-}
+        header nav a:hover {
+            text-decoration: underline;
+        }
 
-#user-reg{
-    font-weight: bold;
-    text-decoration: underline;
-    transform: scale(1.0);
-}
+        .container {
+            width: 80%;
+            margin: auto;
+        }
 
-#bton :hover {
-    background-color: #1a3a60 ;
-    font-weight: bolder;
-    color: white;
-    transform: scale(1.0);
-    transition: font-size 0.5s ease-in 0.1s;
-}
-.flex-container {
-    display: flex;
-}
+        .flex-container {
+            display: flex;
+        }
 
-.sidebar {
-    width:25%;
-    background: #e2e2e2;
-    padding: 20px;
-}
+        .sidebar {
+            width: 25%;
+            background: #e2e2e2;
+            padding: 20px;
+        }
 
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-}
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
 
-.sidebar ul li {
-    padding: 10px;
-    cursor: pointer;
-}
+        .sidebar ul li {
+            padding: 10px;
+            cursor: pointer;
+        }
 
-.sidebar ul li:hover {
-    background: #d1d1d1;
-}
+        .sidebar ul li:hover {
+            background: #d1d1d1;
+        }
 
-#update-prof{
-    background: #d1d1d1;
-}
-.form {
-    width: 70%;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 5px;
-}
+        #update-prof {
+            background: #d1d1d1;
+        }
 
-.form-group {
-    margin-bottom: 15px;
-}
+        .form {
+            width: 70%;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+        }
 
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-}
+        .form-group {
+            margin-bottom: 15px;
+        }
 
-.form-group input,
-.form-group select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="tel"]:focus,
-textarea:focus {
-    border-color: #1a3a60; 
-    outline: none;
-}
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
 
-.btn {
-    background: #35424a;
-    color: #ffffff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.btn:hover {
-    background: #285c84;
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="tel"]:focus,
+        textarea:focus {
+            border-color: #1a3a60;
+            outline: none;
+        }
 
-}
+        .btn {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
 
-
+        .btn:hover {
+            background: #285c84;
+        }
     </style>
 </head>
 <body>
+    <!-- Updated Header -->
     <header>
-        <div class="container">
-            <div class="logo">
-                <h1>Community Volunteering</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li id="user-reg"><a href="#">User  Registration</a></li>
-                    <li><a href="#">Volunteer Opportunities</a></li>
-                    <li><a href="#">Search & Filter</a></li>
-                    <li><a href="#">SignUp</a></li>
-                    <li><a href="#">Rating</a></li>
-                    <li id="bton"><button>Get Involved</button></li>
-                </ul>
-            </nav>
-        </div>
+        <div class="logo">Volunteer Platform</div>
+        <nav>
+            <a th:href="@{/home}">Home</a>
+            <a th:href="@{/index}">User Registration</a>
+            <a th:href="@{/login}">Login</a>
+            <a th:href="@{/signup}">Sign Up</a>
+            <a th:href="@{/rating}">Rating</a>
+            <a th:href="@{/get-involved}">Get Involved</a>
+            <a class="search-button" th:href="@{/search}">Search</a>
+        </nav>
     </header>
 
     <main>
@@ -181,7 +154,7 @@ textarea:focus {
                                 <a href="index.html">
                                     <i class="fas fa-edit">
                                         Registration Form
-                                    </i> 
+                                    </i>
                                 </a>
                             </li>
                             <li id="update-prof"><i class="fas fa-edit"></i> Update Profile</li>
@@ -243,6 +216,5 @@ textarea:focus {
             </div>
         </section>
     </main>
-    
 </body>
 </html>
